@@ -1,3 +1,18 @@
+//Primeira navbar
+import { Collapse, initMDB } from "mdb-ui-kit";
+
+initMDB({ Collapse });
+
+
+
+// Segunda Navbar
+import { Dropdown, Collapse, initMDB } from "mdb-ui-kit";
+
+initMDB({ Dropdown, Collapse });
+
+
+
+// Chamada da API Aluno
 document.addEventListener('DOMContentLoaded', () => {
   fetch('http://localhost:8080/alunos')
     .then(response => response.json())
